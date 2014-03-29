@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller - Demo-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="RAFViewController" sceneMemberID="viewController">
@@ -15,11 +15,66 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvA-8P-AzV" userLabel="Content View">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvz-1v-ra9">
+                                        <rect key="frame" x="17" y="24" width="163" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="OTo-vc-0dg"/>
+                                            <constraint firstAttribute="width" constant="163" id="sbv-Y8-2ZP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a snappy view. Drag me around to see some action." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="160" translatesAutoresizingMaskIntoConstraints="NO" id="py4-xV-Skr">
+                                        <rect key="frame" x="20" y="82" width="160" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="98" id="iSG-2q-hDP"/>
+                                            <constraint firstAttribute="width" constant="160" id="zPh-tX-Tzg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="L7X-Wj-LZ7"/>
+                                    <constraint firstItem="py4-xV-Skr" firstAttribute="top" secondItem="qvz-1v-ra9" secondAttribute="bottom" constant="21" id="UDm-al-jwC"/>
+                                    <constraint firstItem="qvz-1v-ra9" firstAttribute="leading" secondItem="qvA-8P-AzV" secondAttribute="leading" constant="17" id="XSw-mD-kYU"/>
+                                    <constraint firstItem="py4-xV-Skr" firstAttribute="leading" secondItem="qvA-8P-AzV" secondAttribute="leading" constant="20" id="bss-tF-Ttg"/>
+                                    <constraint firstAttribute="width" constant="200" id="dWc-VS-AJw"/>
+                                    <constraint firstItem="py4-xV-Skr" firstAttribute="top" secondItem="qvz-1v-ra9" secondAttribute="bottom" constant="21" id="e49-pr-o97"/>
+                                    <constraint firstAttribute="trailing" secondItem="qvz-1v-ra9" secondAttribute="trailing" constant="20" id="hZc-KH-x74"/>
+                                    <constraint firstItem="qvz-1v-ra9" firstAttribute="top" secondItem="qvA-8P-AzV" secondAttribute="top" constant="24" id="tYb-un-EQP"/>
+                                    <constraint firstAttribute="trailing" secondItem="py4-xV-Skr" secondAttribute="trailing" constant="20" id="x47-OR-udx"/>
+                                    <constraint firstAttribute="bottom" secondItem="py4-xV-Skr" secondAttribute="bottom" constant="20" id="yvD-4g-2JD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="qvA-8P-AzV" secondAttribute="centerY" id="Wu2-0l-KMY"/>
+                            <constraint firstAttribute="centerX" secondItem="qvA-8P-AzV" secondAttribute="centerX" id="xH5-Iq-Urz"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Demo" id="WYi-Zw-GZo"/>
+                    <connections>
+                        <outlet property="contentView" destination="qvA-8P-AzV" id="vLz-wL-Dhx"/>
+                        <outlet property="view" destination="kh9-bI-dsS" id="7V6-zG-Kfh"/>
+                        <outletCollection property="contentViewCenterConstraints" destination="Wu2-0l-KMY" id="ydF-nb-N1x"/>
+                        <outletCollection property="contentViewCenterConstraints" destination="xH5-Iq-Urz" id="Ad9-Uq-1Rj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="664" y="99"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

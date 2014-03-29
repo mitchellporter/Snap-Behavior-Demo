@@ -380,6 +380,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SnapBehaviorDemo/SnapBehaviorDemo-Prefix.pch";
 				INFOPLIST_FILE = "SnapBehaviorDemo/SnapBehaviorDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SnapBehaviorDemo/SnapBehaviorDemo-Prefix.pch";
 				INFOPLIST_FILE = "SnapBehaviorDemo/SnapBehaviorDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +459,7 @@
 				86AB9D4818E734D6005CE406 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86AB9D4918E734D6005CE406 /* Build configuration list for PBXNativeTarget "SnapBehaviorDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +468,7 @@
 				86AB9D4B18E734D6005CE406 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
